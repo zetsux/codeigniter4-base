@@ -24,3 +24,14 @@ The framework needs the following extension(s) installed and loaded: intl.
 #3 {main}
 in SYSTEMPATH\Helpers\number_helper.php on line 136.
  1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2023-10-26 19:17:18 --> Undefined variable $pbkk
+in APPPATH\Views\welcome_message.php on line 72.
+ 1 APPPATH\Views\welcome_message.php(72): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $pbkk', 'C:\\xampp\\htdocs\\codeigniter4-base\\app\\Views\\welcome_message.php', 72)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\codeigniter4-base\\app\\Views\\welcome_message.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('welcome_message', [], true)
+ 5 APPPATH\Controllers\Home.php(14): view('welcome_message', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Home->index()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
